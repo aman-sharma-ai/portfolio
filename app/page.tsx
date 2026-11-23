@@ -131,10 +131,10 @@ export default function Home() {
                   <span className="size-2.5 rounded-full bg-slate-700" />
                   <span className="ml-3 font-mono text-xs text-slate-500">profile.json</span>
                 </div>
-                <pre className="overflow-x-auto p-5 font-mono text-[11.5px] leading-7 text-slate-300 sm:text-[13px]">
+                <pre className="p-5 font-mono text-[11.5px] leading-7 whitespace-pre-wrap break-words text-slate-300 sm:text-[13px]">
                   <span>{"{"}</span>
                   {terminal.map(([key, value], i) => (
-                    <span key={key} className="block pl-5">
+                    <span key={key} className="block pl-8 -indent-3">
                       <span className="text-sky-300">&quot;{key}&quot;</span>
                       <span className="text-slate-500">: </span>
                       <span className="text-emerald-300">{value}</span>
